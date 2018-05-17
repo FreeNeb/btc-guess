@@ -1,0 +1,128 @@
+/*
+ * common.css
+ * 用来设置通用 css 使用规范
+ * 例如 margin，padding，border 等
+ */
+
+.clear::after {
+    content: '';
+    display: block;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    clear: both;
+}
+
+// flex
+.cm-flex {
+    @include display-flex();
+}
+
+.cm-flex-center {
+    @include display-flex();
+    @include flex-align-items(center);
+    @include flex-justify-content(center);
+}
+
+@for $val from 1 through 12 {
+    .cm-flex-num-#{$val} {
+        @include flex-num($val);
+    }
+}
+
+// margin, padding
+.cm-mg-h-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@for $val from 0 through 20 {
+    // margin
+    .cm-mg-#{$val * 5} {
+        margin: #{$val * 5}px;
+    }
+    
+    .cm-mg-t-#{$val * 5} {
+        margin-top: #{$val * 5}px;
+    }
+
+    .cm-mg-r-#{$val * 5} {
+        margin-right: #{$val * 5}px;
+    }
+
+    .cm-mg-b-#{$val * 5} {
+        margin-bottom: #{$val * 5}px;
+    }
+
+    .cm-mg-l-#{$val * 5} {
+        margin-left: #{$val * 5}px;
+    }
+
+    .cm-mg-h-#{$val * 5} {
+        margin-left: #{$val * 5}px;
+        margin-right: #{$val * 5}px;
+    }
+
+    .cm-mg-v-#{$val * 5} {
+        margin-top: #{$val * 5}px;
+        margin-bottom: #{$val * 5}px;
+    }
+
+    // padding
+    .cm-pd-#{$val * 5} {
+        padding: #{$val * 5}px;
+    }
+
+    .cm-pd-t-#{$val * 5} {
+        padding-top: #{$val * 5}px;
+    }
+
+    .cm-pd-r-#{$val * 5} {
+        padding-right: #{$val * 5}px;
+    }
+
+    .cm-pd-b-#{$val * 5} {
+        padding-bottom: #{$val * 5}px;
+    }
+
+    .cm-pd-l-#{$val * 5} {
+        padding-left: #{$val * 5}px;
+    }
+
+    .cm-pd-h-#{$val * 5} {
+        padding-left: #{$val * 5}px;
+        padding-right: #{$val * 5}px;
+    }
+
+    .cm-pd-v-#{$val * 5} {
+        padding-top: #{$val * 5}px;
+        padding-bottom: #{$val * 5}px;
+    }
+}
+
+// border border radius
+@for $val from 1 through 3 {
+    .cm-border-gray-#{$val} {
+        border: #{$val}px solid #ccc;
+    }
+
+    .cm-border-t-gray-#{$val} {
+        border-top: #{$val}px solid #ccc;
+    }
+
+    .cm-border-r-gray-#{$val} {
+        border-right: #{$val}px solid #ccc;
+    }
+
+    .cm-border-b-gray-#{$val} {
+        border-bottom: #{$val}px solid #ccc;
+    }
+
+    .cm-border-l-gray-#{$val} {
+        border-left: #{$val}px solid #ccc;
+    }
+
+    .cm-border-radius-#{$val * 5} {
+        @include border-radius(#{$val * 5}px);
+    }
+}

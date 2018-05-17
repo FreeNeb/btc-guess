@@ -1,0 +1,550 @@
+/*
+ * 页面主题css
+ * 该文件内所有css类需要以 'theme-' 开头
+ * 命名格式：
+ * .theme-一级分类-二级分类
+ * 例如，主标题：
+ * .theme-title-main
+ * 样式中不能包含例如：margin, position 之类会影响页面布局的css属性
+ * 这些属性交由实际 dom 使用这自行设置
+ */
+
+/* title 字体 */
+
+.theme-title-l {
+    font-size: 36px;
+}
+
+.theme-title-main {
+    font-size: 18px;
+}
+
+.theme-title-sub {
+    font-size: 16px;
+}
+
+.theme-title-mid {
+    font-size: 14px;
+}
+
+.theme-title-small {
+    font-size: 12px;
+}
+
+/* item 文本 */
+
+.theme-text-l {
+    font-family: FZLTZHK—GBK1-0;
+    font-size: 36px;
+    line-height: 50px;
+}
+
+.theme-text-main-l,
+.theme-text-main-m,
+.theme-text-main-s {
+    font-size: 16px;
+    color: #666;
+}
+
+.theme-text-main-m {
+    font-size: 14px;
+}
+
+.theme-text-main-s {
+    font-size: 12px;
+}
+
+.theme-text-sub-m,
+.theme-text-sub-s {
+    color: #999;
+    font-size: 14px;
+}
+
+.theme-text-sub-s {
+    font-size: 12px;
+}
+
+.theme-text-red-m,
+.theme-text-red-s {
+    color: #D84023;
+    font-size: 16px;
+}
+
+.theme-text-red-s {
+    font-size: 14px;
+}
+
+.theme-text-blue {
+    font-size: 12px;
+    color: #4A90E2;
+    cursor: pointer;
+}
+
+.theme-text-del {
+    font-size: 12px;
+    color: #2A2A2A;
+}
+
+.theme-label-s {
+    color: $color-black-main;
+    font-size: $font-size-s;
+}
+
+.theme-label-sub-s {
+    color: #c3c3c3;
+    font-size: $font-size-s;
+}
+
+.theme-sidebar-menu-default {
+    color: $color-white-pure;
+    font-size: $font-size-m;
+}
+
+.theme-sidebar-menu-selected {
+    color: $color-red-main;
+    font-size: $font-size-m;
+}
+
+.theme-sidebar-submenu-default {
+    color: $color-black-main;
+    font-size: $font-size-s;
+}
+
+.theme-sidebar-submenu-selected {
+    color: $color-red-main;
+    font-size: $font-size-s;
+}
+
+/* align 对齐 */
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-center {
+    text-align: center;
+}
+
+/* color 颜色 */
+
+.theme-color-main {
+    color: #666;
+}
+
+.theme-color-sub {
+    color: #888;
+}
+
+.theme-color-input {
+    color: #999;
+}
+
+.theme-color-bc {
+    color: #BCBCBC;
+}
+
+.theme-color-red {
+    color: #D84023;
+}
+
+.theme-color-blue {
+    color: #4A90E2;
+}
+
+/* background-color 背景色 */
+
+.theme-bg-main {
+    background-image: linear-gradient(90deg, #EB663C 0%, #D3361C 100%);
+}
+
+.theme-bg-light {
+    background-color: #FFEFEF;
+}
+
+.theme-bg-dl {
+    background-color: #F5F5F5;
+}
+
+.theme-bg-dm {
+    background-color: #D8D8D8;
+}
+
+.theme-bg-ds {
+    background-color: #999;
+}
+
+/* 按钮 */
+
+.theme-button-l,
+.theme-button-main,
+.theme-button-sub {
+    display: inline-block;
+    width: 220px;
+    height: 46px;
+    line-height: 46px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 30px;
+    background-image: linear-gradient(90deg, #EB663C, #D3361C);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+.theme-button-main {
+    width: 120px;
+    height: 34px;
+    font-size: 16px;
+    line-height: 34px;
+    border-radius: 20px;
+    box-shadow: 0 1px 2px 0 #c3c3c3;
+}
+
+.theme-button-sub {
+    width: 80px;
+    height: 34px;
+    font-size: 16px;
+    line-height: 34px;
+    border-radius: 20px;
+    background: #D84023;
+    box-shadow: 0 1px 2px 0 #C3C3C3;
+}
+
+.theme-btn-l,
+.theme-btn-main,
+.theme-btn-mid,
+.theme-btn-sub,
+.theme-btn-small {
+    display: inline-block;
+    width: 220px;
+    height: 46px;
+    line-height: 46px;
+    color: #D84023;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 30px;
+    border: 1px solid #EB663C;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+.theme-btn-main,
+.theme-btn-grey {
+    display: inline-block;
+    width: 80px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 16px;
+    border-radius: 20px;
+    box-shadow: 0 1px 2px 0 #C3C3C3;
+}
+
+.theme-btn-small {
+    width: 70px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.10);
+    box-shadow: 0 1px 3px 0 rgba(210, 210, 210, 0.36);
+}
+
+.theme-btn-sub,
+.theme-btn-mid {
+    width: 102px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+    box-shadow: 0 1px 3px 0 rgba(210, 210, 210, 0.36);
+    background: rgba(255, 255, 255, 0.10);
+    border-radius: 20px;
+}
+
+.theme-btn-mid {
+    width: 120px;
+}
+
+.theme-btn-grey {
+    text-align: center;
+    color: #333;
+    border: 1px solid #d8d8d8;
+    box-shadow: 0 1px 2px 0 #C3C3C3;
+    background: #F5F5F5;
+}
+
+/* border边框 */
+
+.theme-border-main {
+    border-radius: 20px;
+    box-shadow: 0 1px 3px 0 rgba(210, 210, 210, 0.36);
+    border: 1px solid #E7E7E7;
+}
+
+.theme-border-s {
+    border: 1px solid #D8D8D8;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.theme-border-dialog {
+    border: 1px solid #999999;
+    box-shadow: 0 1px 3px 0 rgba(210, 210, 210, 0.36);
+    border-radius: 20px;
+}
+
+.theme-border-main:focus,
+.theme-border-s:focus,
+.theme-border-dialog:focus {
+    outline: none;
+}
+
+/* icon图标 */
+
+.theme-icon-cir {
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #DDDDDD;
+    background: #fff;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.theme-icon-arrow {
+    display: inline-block;
+    text-align: center;
+    width: 19px;
+    height: 26px;
+    line-height: 26px;
+    color: #fff;
+    background-color: #D8D8D8;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.theme-icon-cir-m,
+.theme-icon-cir-s,
+.theme-icon-cir-l {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-image: linear-gradient(90deg, #EB663C 0%, #D3361C 100%);
+}
+
+.theme-icon-cir-s,
+.theme-icon-green {
+    width: 16px;
+    height: 16px;
+}
+
+.theme-icon-cir-l {
+    width: 30px;
+    height: 30px;
+}
+
+.theme-icon-green {
+    border-radius: 50%;
+    background: #61BC06;
+}
+
+/* img图片 */
+
+.theme-img-round {
+    width: 150px;
+    height: 150px;
+    background-color: #eee;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.theme-img-circle {
+    width: 150px;
+    height: 150px;
+    background-color: #eee;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.theme-img-border {
+    width: 150px;
+    height: 150px;
+    background-color: #eee;
+    border: 3px solid #fff;
+    outline: 1px solid grey;
+}
+
+/* Nav导航 */
+
+.theme-nav-title {
+    text-align: center;
+    color: #333;
+    font-size: 16px;
+}
+
+.theme-nav-active::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-image: linear-gradient(90deg, #E8470B 0%, #EC5810 51%, #CA1B1E 100%);
+}
+
+.theme-tab-ul {
+    height: 28px;
+    border-bottom: 1px solid #EB663C;
+    overflow: hidden;
+}
+
+.theme-tab-ul li {
+    float: left;
+    text-align: center;
+    width: 166px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+    color: #D84023;
+    border: 1px solid #EB663C;
+    border-bottom: none;
+    border-top-right-radius: 28px;
+}
+
+.theme-tab-ul li:first-child {
+    position: relative;
+    z-index: 10;
+}
+
+.theme-tab-ul li:last-child {
+    position: relative;
+    margin-left: -28px;
+    z-index: 1;
+}
+
+.theme-tab-ul li.active {
+    background-image: linear-gradient(90deg, #EB663C 0%, #D3361C 100%);
+    color: #fff;
+}
+
+/* Hr 分割线 */
+
+.theme-hr-main {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #eee;
+}
+
+.theme-hr-s {
+    display: block;
+    margin: 10px auto;
+    border-top: 2px solid #ff3300;
+    width: 20%;
+}
+
+/* 其他 */
+
+.theme-pre-line::before {
+    content: ' ';
+    position: relative;
+    top: 3px;
+    display: inline-block;
+    width: 4px;
+    height: 18px;
+    margin-right: 10px;
+    background-image: linear-gradient(-90deg, #EB663C 0%, #D3361C 100%);
+}
+
+.theme-more-c {
+    color: #888;
+    font-size: 16px;
+}
+
+.theme-more-e {
+    color: #888;
+    font-size: 16px;
+}
+
+.theme-close-btn {
+    font-size: 18px;
+    color: #888;
+}
+
+.theme-part-title {
+    font-size: 18px;
+    color: #333;
+    line-height: 25px;
+    height: 43px;
+    padding-top: 11px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 30px;
+}
+.theme-part-sub {
+    color: #666;
+    font-size: 16px;
+    line-height: 22px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eee;
+}
+.theme-part-sub::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 18px;
+    background-color: #D3361C;
+    line-height: 22px;
+    margin-bottom: 3px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* tip */
+.tip-style {
+    height: 20px;
+    background-color: #F5F5F5;
+    font-size: 12px;
+    line-height: 20px;
+    padding-left: 20px;
+    margin-top: 25px;
+    margin-bottom: 11px;
+}
+
+/* icon */
+.theme-icon-m {
+    line-height: 24px;
+
+    &:before {
+        content: ' ';
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+        background: center center no-repeat;
+        background-size: contain;
+    }
+}
+
+/* Input */
+.theme-input-form {
+    padding: 5px 15px;
+    border: 1px solid #E7E7E7;
+    box-shadow: 0 1px 3px 0 rgba(210,210,210,0.36);
+    border-radius: 20px;
+    font-size: 12px;
+    color: #666;
+
+    &:focus {
+        border-color: $color-red-main;
+    }
+}
+
+.theme-input-form-readonly {
+    padding: 5px 15px;
+    font-size: 12px;
+    color: #666;
+}

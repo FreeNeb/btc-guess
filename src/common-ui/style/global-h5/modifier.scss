@@ -1,0 +1,7 @@
+/*
+ * 用于覆盖第三方库 css 样式，例如：element-ui
+ */
+
+.el-date-editor .el-icon-date {
+    display: none;
+}

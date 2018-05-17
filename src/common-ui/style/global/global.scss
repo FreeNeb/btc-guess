@@ -1,0 +1,21 @@
+@import '../reset/reset.scss';
+@import './modifier.scss';
+@import './common.scss';
+
+* {
+    @include border-box();
+}
+
+html {
+    width: 100%;
+    //height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+input {
+    outline: none;
+}

@@ -1,0 +1,13 @@
+{{extend '../common/layout.art'}}
+
+{{block 'title'}}
+<title>BTC走势</title>
+{{/block}}
+
+{{block 'content'}}
+<div id="page">
+    <div class="main-content cm-mg-h-auto">
+        <page></page>
+    </div>
+</div>
+{{/block}}
